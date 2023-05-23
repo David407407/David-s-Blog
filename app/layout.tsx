@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import ComplexNavbar from './NavBar'
+import Footer from './Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-gradient-to-b from-white to-white w-full`}>
         <ComplexNavbar />
         {children}
+        <Footer />
       </body>
     </html>
   )
